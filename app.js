@@ -1,7 +1,7 @@
 let carType = [
     {name: " Mercedes Benz",
     model: "Ben23383",
-    amount: "#200,000",
+    amount: "$200,000",
     productionDate: 2020,
     image: "image/mercedes.jpeg",
     speed: " 300km/hr",
@@ -118,13 +118,13 @@ let carMapping = carType.map( function (c) {
                     <img src= ${c.image} class="car-img">
                  </div>
                  <div class="text-cont">
-                    <p> Name: ${c.name}</p>
-                    <p> Model: ${c.model}</p>
-                    <p> Amount: ${c.amount}</p>
-                    <p>Speed: ${c.speed}</p>
-                    <p>Date: ${getDate(c.productionDate)}</p>
-                    <p> Favorite: ${favColor(c.favColor)}</p>
-                    <p> Made: ${c.made}</p>
+                    <p> Name:<i> ${c.name}</i></p>
+                    <p> Model:<i> ${c.model}</i></p>
+                    <p> Amount:<i> ${c.amount}</i></p>
+                    <p>Speed:<i> ${c.speed}</i></p>
+                    <p>Date: <i>${getDate(c.productionDate)}</i></p>
+                    <p> Favorite:<i> ${favColor(c.favColor)}</i></p>
+                    <p> Made:<i> ${c.made}</i></p>
                  </div>
             </div>`
 });
